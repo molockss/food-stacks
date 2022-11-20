@@ -8,7 +8,7 @@
 # Comal - Latinx stories told through the lens of food
 A place for Latinx families to document, share, and discover family recipes. -->
 
-**Link to project:** https://comal.herokuapp.com/ <br>
+**Link to project:** https://github.com/molockss <br>
 **Demo User** <br>
 email: test123@test.com <br>
 password: test123
