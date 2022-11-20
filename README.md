@@ -4,9 +4,6 @@
   Foodstacks <br>
   A place for everyone to document, share and discover new experiences in Dubai
 </h1>
-<!-- 
-# Comal - Latinx stories told through the lens of food
-A place for Latinx families to document, share, and discover family recipes. -->
 
 **Link to project:** https://github.com/molockss <br>
 **Demo User** <br>

@@ -26,6 +26,12 @@ body {
    height: 550px
 }
 
+.img-fluids {
+    border-radius: 20%;
+    width: 100%;
+    max-width: 600px;
+  height: auto;
+}
 /* .page-section {
     background-color: red;
     height: 40%;
