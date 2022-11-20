@@ -1,0 +1,131 @@
+<%- include('partials/logged-in-header') -%>
+<!-- <script type="text/javascript">
+  function CheckArea(val){
+   var element=document.getElementById('area');
+   if(val=='pick an area'||val=='other')
+     element.style.display='block';
+   else  
+     element.style.display='none';
+  }
+  
+  </script>  -->
+
+<div class="container card-container">
+  <div class="row justify-content-center">
+      <div class="col-6">
+          <!-- <div>
+              <p><strong>User Name</strong>: <%= user.userName %></p>
+              <p><strong>Email</strong>: <%= user.email %></p>
+              <!-- <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
+          <!-- </div> --> 
+          <div class="mt-5">
+            <h2>Add a Recommendation</h2>
+            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+              <div class="mb-3">
+                  <label for="title" class="form-label">Restaurant/Cafe Name</label>
+                  <input type="text" class="form-control" id="title" name="title">
+              </div>
+              <div id="div1" class="mb-3">
+                
+              <label for="area" class="form-label">Which in area in Dubai is it located?</label>
+              <select class="form-select"  name="area" onchange='CheckArea(this.value);'>
+                <option selected>Select Area </option> 
+                <option value="Dubai Marina"> Dubai Marina</option>
+                <option value="Palm Jumeirah"> Palm Jumeirah</option>
+                <option value="Downtown Dubai"> Downtown Dubai</option>
+                <option value="Business Bay"> Business Bay</option>
+                <option value="Mirdif"> Mirdif</option>
+                <option value="Deira"> Deira</option>
+                <option value="Bur Dubai"> Bur Dubai</option>
+                <!-- <option value="other">other</option> -->
+                
+              </select>
+              <!-- <input type="text" name="area" id="area" style='display:none;'/> -->
+
+            
+            </div>
+            <div class="mb-3">
+              <label for="basic-url" class="form-label">What would you recommend it for? </label>
+              <select class="form-select" aria-label="Default select example" id="menu" name="menu">
+                <option selected>Please Select</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Brunch">Brunch</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Drink">Drinks</option>
+              </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Rating</label>
+                <select class="form-select" aria-label="Default select example" id="rating" name="rating">
+                  <option selected>Please Select</option>
+                  <option class="rating"> &#xf005; &#xf005; &#xf005; &#xf005; &#xf005;</option> f005
+                  <option class="rating">  &#xf005; &#xf005; &#xf005; &#xf005; </option>
+                  <option class="rating"> &#xf005; &#xf005; &#xf005;</option>
+                  <option class="rating"> &#xf005; &#xf005; </option>
+                  <option class="rating">  &#xf005;</option>
+        
+              
+                </select>
+                </div>
+
+                  
+              <div class="mb-3">
+                <label for="caption" class="form-label">Review</label>
+                <textarea class="form-control" id="caption" name="caption"></textarea>
+              </div>
+              
+              <div class="mb-3">
+                <label for="imgUpload" class="form-label">Image</label>
+                <input type="file" class="form-control" id="imageUpload" name="file">
+              </div>
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+            </form>
+          </div>
+
+
+ <!-- <div class="mb-3">
+              <label for="location" class="form-label">What area is it located?</label>
+              <select class="form-select" aria-label="Default select example" id="location" name="location"> !--
+              
+
+             
+              <div class="mb-3">
+                <label for="caption" class="form-label">Description</label>
+                <textarea class="form-control" id="caption" name="caption"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="ingredients" class="form-label">Ingredients</label>
+                <textarea class="form-control" id="ingredients" name="ingredients" placeholder="Put each ingredient on its own line." rows="5"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="directions" class="form-label">Directions</label>
+                <textarea class="form-control" id="directions" name="directions" placeholder="Put each step on its own line." rows="5"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="imgUpload" class="form-label">Image</label>
+                <input type="file" class="form-control" id="imageUpload" name="file">
+              </div>
+              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+            </form>
+          </div>
+      </div>
+      <!-- <div class="col-6">
+        <ul class="row list-unstyled">
+        <% for(var i=0; i<posts.length; i++) {%>
+          <li class="col-6 justify-content-between mt-5">
+            <a href="/post/<%= posts[i]._id%>">
+              <img class="img-fluid" src="<%= posts[i].image%>">
+            </a>
+          </li>
+        <% } %>
+        </ul>
+        <div class="row justify-content-center mt-5">
+          <a class="btn btn-primary" href="/feed">Return to Feed</a>
+        </div>  
+      </div>   -->
+    </div>
+  </div>
+<%- include('partials/footer') -%>
