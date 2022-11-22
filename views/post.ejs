@@ -103,15 +103,15 @@
           <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
             btn btn-secondary" type="submit"></button>
           </form>
-          <!-- <%if(post.user == user.id){ %>
+          <%if(post.user == user.id){ %>
           <form
             action="/post/deletePost/<%= post.id %>?_method=DELETE"
             method="POST"
-            class="col-3"
+            class="col-md-7 text-center"
           >
-            <button class="btn btn-primary fa fa-trash" type="submit"></button>
+            <button class="btn btn-primary justify-content-center fa fa-trash" type="submit"></button>
           </form>
-          <%}%> -->
+          <%}%>
         </div>
       </div>
       <div class="col-md-6">
