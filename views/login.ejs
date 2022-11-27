@@ -2,7 +2,7 @@
 
 <main class="container card-container">
   <div class="row justify-content-center mb-4">
-    <section class="col-6 mb-5 space">
+    <section class="col-6 mb-5 space login_input">
       <h1>Sign in with email</h1>
       <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
       <div class="alert alert-danger"><%= el.msg %></div>
@@ -11,7 +11,7 @@
       <div class="alert alert-info"><%= el.msg %></div>
       <% }) %> <% } %>
       <form action="/login" method="POST">
-        <div class="mb-4 space">
+        <div class="mb-4 space login_input">
           <label for="exampleInputEmail1" class="form-label"
             >Email address</label
           >
@@ -23,7 +23,7 @@
             name="email"
           />
         </div>
-        <div class="mb-5">
+        <div class="mb-5 login_input">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input
             type="password"
@@ -48,7 +48,7 @@
 
       </div>
     </section>
-  </div>
+
 </main>
 
 <%- include('partials/footer') -%>

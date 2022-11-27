@@ -82,7 +82,7 @@
  
     <div class="row d-flex justify-content-center">
       <h1><%= post.title %></h1>
-      <p>By: <%= user.userName %></p>
+      <p>By: <%= post.name %></p>  
       <div class="col-md-6">
         <img src="<%= post.image%>" class="img-fluid" alt="Responsive image" >
         <div class="row row-cols-3">
@@ -103,18 +103,18 @@
           <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
             btn btn-secondary" type="submit"></button>
           </form>
-          <!-- <%if(post.user == user.id){ %>
+          <%if(post.user == user.id){ %>
           <form
             action="/post/deletePost/<%= post.id %>?_method=DELETE"
             method="POST"
-            class="col-3"
+            class="col-md-7 justify-content-center text-center"
           >
             <button class="btn btn-primary fa fa-trash" type="submit"></button>
           </form>
-          <%}%> -->
+          <%}%>
         </div>
       </div>
-      <div class="col-md-4 justify-content-start">
+      <div class="col-md-5 justify-content-start">
         <h3 class="display-4 rating">Review</h3><hr class="style1">
         <p><%= post.caption %></p>
           <h2>Ratings</h2> <hr class="style1">

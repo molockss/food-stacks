@@ -57,6 +57,7 @@ module.exports = {
 
       await Post.create({
         title: req.body.title,
+        name: req.body.name,
         image: result.secure_url,
         cloudinaryId: result.public_id,
         caption: req.body.caption,
@@ -170,9 +171,9 @@ module.exports = {
       // Delete post from db
       await Post.remove({ _id: req.params.id });
       console.log("Deleted Post");
-      res.redirect("/profile");
+      res.redirect("/my-profile");
     } catch (err) {
-      res.redirect("/profile");
+      res.redirect("/my-profile");
     }
   },
 };

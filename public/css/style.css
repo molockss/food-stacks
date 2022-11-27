@@ -85,3 +85,50 @@ body {
   .space {
     margin-top: 40px;
   }
+
+
+  
+  /* Media Queries 
+
+  Login Page */
+
+
+  @media screen and (max-width: 600px) {
+
+    .login_input,
+    .login__btn,
+    .login__title {  
+      min-width: 90vw;
+    }
+  
+    .hr {
+      width: 35rem;
+    }
+.center-btn { 
+    text-align: center;
+
+}
+
+/* .bottom { margin: auto auto ;
+display: flex;
+flex-direction: row;
+justify-content: start;} */
+
+    .sign { margin: auto;
+        width: 10vw; /* change this according to your layout */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+
+    .navbar-toggler{
+
+        margin: auto auto;
+      
+    }
+    }
+        
+
+    
+  
+
+
