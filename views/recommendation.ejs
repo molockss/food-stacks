@@ -9,82 +9,87 @@
   }
   
   </script>  -->
-
-<div class="container card-container">
-  <div class="row justify-content-center">
-      <div class="col-6">
-          <!-- <div>
-              <p><strong>User Name</strong>: <%= user.userName %></p>
-              <p><strong>Email</strong>: <%= user.email %></p>
-              <!-- <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
-          <!-- </div> --> 
-          <div class="mt-5">
-            <h2>Add a Recommendation</h2>
-            <form action="/post/createPost" enctype="multipart/form-data" method="POST">
-              <div class="mb-3">
-                  <label for="title" class="form-label">Restaurant/Cafe Name</label>
-                  <input type="text" class="form-control" id="title" name="title">
+  <div class="container card-container">
+    <div class="row justify-content-center adjust mb-4">
+        <div class="col-6 mb-5 space ">
+            <!-- <div>
+                <p><strong>User Name</strong>: <%= user.userName %></p>
+                <p><strong>Email</strong>: <%= user.email %></p>
+                <!-- <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
+            <!-- </div> --> 
+            <div class="mt-4 login_input">
+              <h2>Add a Recommendation</h2><br>
+              <form action="/post/createPost" enctype="multipart/form-data" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" name="name">
               </div>
-              <div id="div1" class="mb-3">
-                
-              <label for="area" class="form-label">Which in area in Dubai is it located?</label>
-              <select class="form-select"  name="area" onchange='CheckArea(this.value);'>
-                <option selected>Select Area </option> 
-                <option value="Dubai Marina"> Dubai Marina</option>
-                <option value="Palm Jumeirah"> Palm Jumeirah</option>
-                <option value="Downtown Dubai"> Downtown Dubai</option>
-                <option value="Business Bay"> Business Bay</option>
-                <option value="Mirdif"> Mirdif</option>
-                <option value="Deira"> Deira</option>
-                <option value="Bur Dubai"> Bur Dubai</option>
-                <!-- <option value="other">other</option> -->
-                
-              </select>
-              <!-- <input type="text" name="area" id="area" style='display:none;'/> -->
-
-            
-            </div>
-            <div class="mb-3">
-              <label for="basic-url" class="form-label">What would you recommend it for? </label>
-              <select class="form-select" aria-label="Default select example" id="menu" name="menu">
-                <option selected>Please Select</option>
-                <option value="Breakfast">Breakfast</option>
-                <option value="Brunch">Brunch</option>
-                <option value="Lunch">Lunch</option>
-                <option value="Dinner">Dinner</option>
-                <option value="Dessert">Dessert</option>
-                <option value="Drink">Drinks</option>
-              </select>
-              </div>
-
-              <div class="mb-3">
-                <label for="basic-url" class="form-label">Rating</label>
-                <select class="form-select" aria-label="Default select example" id="rating" name="rating">
-                  <option selected>Please Select</option>
-                  <option class="rating"> &#xf005; &#xf005; &#xf005; &#xf005; &#xf005;</option> f005
-                  <option class="rating">  &#xf005; &#xf005; &#xf005; &#xf005; </option>
-                  <option class="rating"> &#xf005; &#xf005; &#xf005;</option>
-                  <option class="rating"> &#xf005; &#xf005; </option>
-                  <option class="rating">  &#xf005;</option>
-        
+                <div class="mb-3">
+                    <label for="title" class="form-label">Restaurant/Cafe Name</label>
+                    <input type="text" class="form-control" id="title" name="title">
+                </div>
+                <div id="div1" class="mb-3">
+                  
+                <label for="area" class="form-label">Location</label>
+                <select class="form-select"  name="area" onchange='CheckArea(this.value);'>
+                  <option selected>Select the area In Dubai </option> 
+                  <option value="Downtown Dubai"> Downtown Dubai</option>
+                  <option value="Business Bay"> Business Bay</option>
+                  <option value="Palm Jumeirah"> Palm Jumeirah</option>
+                  <option value="Dubai Marina"> Dubai Marina</option>
+                  <option value="Jumeirah"> Jumeirah</option>
+                  <option value="Global Village"> Global Village</option>
+                  <option value="Mirdif"> Mirdif</option>
+                  <option value="Deira"> Deira</option>
+                  <option value="Other"> Other</option>
+                  <!-- <option value="other">other</option> -->
+                  
+                </select>
+                <!-- <input type="text" name="area" id="area" style='display:none;'/> -->
+  
               
+              </div>
+              <div class="mb-3">
+                <label for="basic-url" class="form-label">Menu Recommendation </label>
+                <select class="form-select" aria-label="Default select example" id="menu" name="menu">
+                  <option selected>What menu would you recommend?</option>
+                  <option value="Breakfast">Breakfast</option>
+                  <option value="Brunch">Brunch</option>
+                  <option value="Lunch">Lunch</option>
+                  <option value="Dinner">Dinner</option>
+                  <option value="Dessert">Dessert</option>
+                  <option value="Drink">Drinks</option>
                 </select>
                 </div>
-
-                  
-              <div class="mb-3">
-                <label for="caption" class="form-label">Review</label>
-                <textarea class="form-control" id="caption" name="caption"></textarea>
-              </div>
-              
-              <div class="mb-3">
-                <label for="imgUpload" class="form-label">Image</label>
-                <input type="file" class="form-control" id="imageUpload" name="file">
-              </div>
-              <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
-            </form>
-          </div>
-
+  
+                <div class="mb-3">
+                  <label for="basic-url" class="form-label">Rating</label>
+                  <select class="form-select" aria-label="Default select example" id="rating" name="rating">
+                    <option selected>Please rate out of 5 stars</option>
+                    <option class="rating"> &#xf005; &#xf005; &#xf005; &#xf005; &#xf005;</option> f005
+                    <option class="rating">  &#xf005; &#xf005; &#xf005; &#xf005; </option>
+                    <option class="rating"> &#xf005; &#xf005; &#xf005;</option>
+                    <option class="rating"> &#xf005; &#xf005; </option>
+                    <option class="rating">  &#xf005;</option>
+          
+                
+                  </select>
+                  </div>
+  
+                    
+                <div class="mb-3">
+                  <label for="caption" class="form-label">Review</label>
+                  <textarea class="form-control" id="caption" name="caption"></textarea>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="imgUpload" class="form-label">Image</label>
+                  <input type="file" class="form-control" id="imageUpload" name="file">
+                </div><br>
+                <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
+              </form>
+            </div>
+  
 
  <!-- <div class="mb-3">
               <label for="location" class="form-label">What area is it located?</label>

@@ -22,7 +22,7 @@ module.exports = {
   getBookmarks: async (req, res) => {
     try {
       const posts = await Post.find({ user: req.user.id });
-      res.render("favorite-recipes.ejs", { posts: posts, user: req.user });
+      res.render("bookmarks.ejs", { posts: posts, user: req.user });
     } catch (err) {
       console.log(err);
     }
@@ -57,6 +57,7 @@ module.exports = {
 
       await Post.create({
         title: req.body.title,
+        name: req.body.name,
         image: result.secure_url,
         cloudinaryId: result.public_id,
         caption: req.body.caption,
