@@ -81,3 +81,7 @@ body {
 .rating  {
     font-family: 'Font Awesome 5 Free', 'Arial';
   }
+
+  .space {
+    margin-top: 40px;
+  }

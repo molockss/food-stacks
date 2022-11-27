@@ -1,8 +1,8 @@
 <%- include('partials/header') -%>
 
 <main class="container card-container">
-  <div class="row justify-content-center">
-    <section class="col-6 mt-5">
+  <div class="row justify-content-center mb-4">
+    <section class="col-6 mb-5 space">
       <h1>Sign in with email</h1>
       <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
       <div class="alert alert-danger"><%= el.msg %></div>
@@ -11,7 +11,7 @@
       <div class="alert alert-info"><%= el.msg %></div>
       <% }) %> <% } %>
       <form action="/login" method="POST">
-        <div class="mb-3">
+        <div class="mb-4 space">
           <label for="exampleInputEmail1" class="form-label"
             >Email address</label
           >
@@ -23,7 +23,7 @@
             name="email"
           />
         </div>
-        <div class="mb-3">
+        <div class="mb-5">
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input
             type="password"
@@ -34,8 +34,8 @@
         </div>
         <button type="submit" class="btn btn-primary">Sign In</button>
         <div class="row">
-          <div class="mt-2 col-md-12 "> 
-            <button href="/auth/login" type="submit" action="login" class="btn btn-secondary">Sign In with Microsoft </button>
+          <div class="mt-2 col-md-12 mb-5 "> 
+            <button href="/auth/login" type="submit" action="login" class="btn btn-secondary ">Sign In with Microsoft </button>
           </div>
         </div>
         
