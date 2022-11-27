@@ -1,10 +1,10 @@
 
 <h1 align="center">
-  <img src="foodstacks.png" width="224px"/><br/>
+<!--   <img src="foodstacks.png" width="224px"/><br/> -->
   Foodstacks <br>
   A place for everyone to document, share and discover new experiences in Dubai
 </h1>
-
+<!-- 
 **Link to project:** https://github.com/molockss <br>
 **Demo User** <br>
 email: test123@test.com <br>
@@ -23,7 +23,7 @@ password: test123
 
 
 ## Lessons Learned:
-
+ -->
 
 
 
