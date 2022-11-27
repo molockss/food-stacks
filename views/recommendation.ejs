@@ -10,15 +10,15 @@
   
   </script>  -->
   <div class="container card-container">
-    <div class="row justify-content-center">
-        <div class="col-6">
+    <div class="row justify-content-center adjust mb-4">
+        <div class="col-6 mb-5 space ">
             <!-- <div>
                 <p><strong>User Name</strong>: <%= user.userName %></p>
                 <p><strong>Email</strong>: <%= user.email %></p>
                 <!-- <a href="/logout" class="col-3 btn btn-primary">Logout</a> -->
             <!-- </div> --> 
-            <div class="mt-5">
-              <h2>Add a Recommendation</h2>
+            <div class="mt-4 login_input">
+              <h2>Add a Recommendation</h2><br>
               <form action="/post/createPost" enctype="multipart/form-data" method="POST">
                 <div class="mb-3">
                   <label for="name" class="form-label">Your Name</label>
@@ -85,7 +85,7 @@
                 <div class="mb-3">
                   <label for="imgUpload" class="form-label">Image</label>
                   <input type="file" class="form-control" id="imageUpload" name="file">
-                </div>
+                </div><br>
                 <button type="submit" class="btn btn-primary" value="Upload">Submit</button>
               </form>
             </div>

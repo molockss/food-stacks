@@ -1,11 +1,11 @@
 <%- include('partials/header') -%>
 
 <main class="container card-container">
-  <div class="row justify-content-center mb-4">
-    <section class="col-6 mb-5 space login_input">
-      <h1>Sign in with email</h1>
+  <div class="row justify-content-center mb-4 space-div">
+    <section class="col-6 mb-4 space login_input">
+      <h1>Sign in with email</h1> <br> 
       <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
-      <div class="alert alert-danger"><%= el.msg %></div>
+      <div class="alert alert-danger title-div"><%= el.msg %></div>
       <% }) %> <% } %> <% if (locals.messages.info) { %> <%
       messages.info.forEach( el => { %>
       <div class="alert alert-info"><%= el.msg %></div>
