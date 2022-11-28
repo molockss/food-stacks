@@ -96,23 +96,23 @@
           </form>
           <h3 class="col"><%= post.likes.length - 1 %></h3>
           <form
-            class="col justify-content-between"
+            class="col justify-content-between end"
             action="/post/bookmarkPost/<%= post.id %>?_method=PUT"
             method="POST"
           >
           <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
-            btn btn-secondary" type="submit"></button>
+            btn btn-secondary end" type="submit"></button>
           </form>
           <%if(post.user == user.id){ %>
           <form
             action="/post/deletePost/<%= post.id %>?_method=DELETE"
             method="POST"
-            class="col-md-7 justify-content-center text-center"
+            class="col-md-7 justify-content-center text-center endd"
           >
-            <button class="btn btn-primary fa fa-trash" type="submit"></button>
+            <button class="btn btn-primary fa fa-trash endd" type="submit"></button>
           </form>
           <%}%>
-        </div>
+        </div><br>
       </div>
       <div class="col-md-5 justify-content-start">
         <h3 class="display-4 rating">Review</h3><hr class="style1">
