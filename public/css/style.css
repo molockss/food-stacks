@@ -149,6 +149,43 @@ justify-content: start;} */
         margin: auto auto;
       
     }
+
+
+    html,
+    body {
+        height: 100%;
+        font-size: 1rem;
+        font-family: 'Calibri';
+        font-variant: inherit;
+    }
+
+    /* .card-img-top{
+        width: 100%;
+        max-width: 400px;
+        max-height: 500px;
+        height: 80%;
+    } */
+
+    .img-fluid {
+        border-radius: 30%;
+        width: 100vw;
+        max-width: 80vw;
+        /* max-height: 90vh; */
+      height: 40vh;
+    }
+
+    .end {
+        margin-left: 40px;
+    }
+
+    .endd {
+        margin-left: 60px;
+    }
+
+    .shift {
+margin-right: 0
+    }
+
     }
         
 
