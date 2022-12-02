@@ -32,9 +32,24 @@
                         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
                       </div>
                     <button type="submit" class="btn btn-primary">Create my account</button>
+                    
                   </form>
+
+                  <form action="/login" method="POST">
+                    <div>
+                        <label for="email" class="left"></label>
+                        <input type="email" name="email" id="email" value="account@demo.com" hidden/>
+                        <label for="password" class="left"></label>
+                        <input type="password" name="password" id="password" value="accountdemo123" hidden/>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-success">Explore a demo account (No Sign-up required)</button>
+                    </div>
+                </form>
             </section>
         </div>
+        
     </main>
+    
 
 <%- include('partials/footer') -%>
