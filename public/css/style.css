@@ -113,7 +113,7 @@ select {
     .login_input,
     .login__btn,
     .login__title {  
-      min-width: 90vw;
+      min-width: 84vw;
     }
   
     .hr {
@@ -197,10 +197,22 @@ justify-content: start;} */
 margin-right: 0
     }
 
+    .sizee {
+        font-size: small;
+        font-weight: lighter;
+        color: gray;
+    }
+    
+    
+
     }
         
 
     
   
-
+.sizee {
+    /* font-size: small; */
+    font-weight: lighter;
+    color: grey
+}
 
