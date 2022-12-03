@@ -32,7 +32,7 @@ module.exports = function (passport) {
   
     clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackURL: "https://foodstacks.up.railway.app/auth/google/callback",
+    callbackURL: "http://foodstacks.up.railway.app/auth/google/callback",
     //"http://localhost:3000/auth/google/callback" ||
 },
 async (accessToken, refreshToken, profile, done) => {
