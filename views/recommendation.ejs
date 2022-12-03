@@ -21,18 +21,18 @@
               <h2>Add a Recommendation</h2><br>
               <form action="/post/createPost" enctype="multipart/form-data" method="POST">
                 <div class="mb-3">
-                  <label for="name" class="form-label">Your Name</label>
-                  <input type="text" class="form-control" id="name" name="name">
+                  <label for="name" class="form-label">Your UserName</label>
+                  <input type="text" class="form-control sizee " id="name" name="name" placeholder="">
               </div>
                 <div class="mb-3">
                     <label for="title" class="form-label">Restaurant/Cafe Name</label>
-                    <input type="text" class="form-control" id="title" name="title">
+                    <input type="text" class="form-control " id="title" name="title" placeholder="">
                 </div>
                 <div id="div1" class="mb-3">
                   
                 <label for="area" class="form-label">Location</label>
-                <select class="form-select"  name="area" onchange='CheckArea(this.value);'>
-                  <option selected>Select the area In Dubai </option> 
+                <select class="form-select sizee" aria-placeholder="333" name="area" onchange='CheckArea(this.value);'>
+                  <option id="selectedd" selected> Select Area </option> 
                   <option value="Downtown Dubai"> Downtown Dubai</option>
                   <option value="Business Bay"> Business Bay</option>
                   <option value="Palm Jumeirah"> Palm Jumeirah</option>
@@ -50,9 +50,9 @@
               
               </div>
               <div class="mb-3">
-                <label for="basic-url" class="form-label">Menu Recommendation </label>
-                <select class="form-select" aria-label="Default select example" id="menu" name="menu">
-                  <option selected>What menu would you recommend?</option>
+                <label for="basic-url" class="form-label ">Menu Recommendation </label>
+                <select class="form-select sizee" aria-label="Default select example" id="menu" name="menu">
+                  <option selected>Menu Type</option>
                   <option value="Breakfast">Breakfast</option>
                   <option value="Brunch">Brunch</option>
                   <option value="Lunch">Lunch</option>
@@ -64,8 +64,8 @@
   
                 <div class="mb-3">
                   <label for="basic-url" class="form-label">Rating</label>
-                  <select class="form-select" aria-label="Default select example" id="rating" name="rating">
-                    <option selected>Please rate out of 5 stars</option>
+                  <select class="form-select sizee" aria-label="Default select example" id="rating" name="rating">
+                    <option selected> Rate out of 5 stars</option>
                     <option class="rating"> &#xf005; &#xf005; &#xf005; &#xf005; &#xf005;</option> f005
                     <option class="rating">  &#xf005; &#xf005; &#xf005; &#xf005; </option>
                     <option class="rating"> &#xf005; &#xf005; &#xf005;</option>
@@ -79,7 +79,7 @@
                     
                 <div class="mb-3">
                   <label for="caption" class="form-label">Review</label>
-                  <textarea class="form-control" id="caption" name="caption"></textarea>
+                  <textarea class="form-control sizee" placeholder="Leave your honest opinion" id="caption" name="caption"></textarea>
                 </div>
                 
                 <div class="mb-3">

@@ -7,6 +7,9 @@ body {
     font-variant: inherit;
 }
 
+.fa-heart:hover {
+    color: red;
+}
 *{
     padding: 0;
     margin: 0;
@@ -89,7 +92,18 @@ select {
     font-family: 'Font Awesome 5 Free', 'cursive';
   }
 
+  input::placeholder {
+    font-family: "calibri";
+  
+
+   
+}
  
+/* #selectedd { 
+    font-family: "calibri";
+    font-size: small;
+
+} */
 
   
   /* Media Queries 
@@ -102,7 +116,7 @@ select {
     .login_input,
     .login__btn,
     .login__title {  
-      min-width: 90vw;
+      min-width: 84vw;
     }
   
     .hr {
@@ -150,11 +164,11 @@ justify-content: start;} */
       
     }
 
-
+    
     html,
     body {
         height: 100%;
-        font-size: 1rem;
+        font-size: 18px;
         font-family: 'Calibri';
         font-variant: inherit;
     }
@@ -186,10 +200,22 @@ justify-content: start;} */
 margin-right: 0
     }
 
+    .sizee {
+        font-size: small;
+        font-weight: lighter;
+        color: gray;
+    }
+    
+    
+
     }
         
 
     
   
-
+.sizee {
+    /* font-size: small; */
+    font-weight: lighter;
+    color: grey
+}
 
