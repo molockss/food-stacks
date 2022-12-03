@@ -1,12 +1,19 @@
+// Using express framework
 const express = require("express");
 const app = express();
+
+// connect to the moon (database, authentication)
 const mongoose = require("mongoose");
 const passport = require("passport");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
+
+// sends messages from server to client (on screen)
 const methodOverride = require("method-override");
 const flash = require("express-flash");
 const logger = require("morgan");
+
+
 // const connectDB = require("./config/database");
 const mainRoutes = require("./routes/main");
 const postRoutes = require("./routes/posts");
@@ -54,20 +61,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-/**
- * OAuth authentication routes. (Sign in)
- */
-//  app.get('/auth/google', 
-//  passport.authenticate('google', { scope : ['profile', 'email'] }));
 
-// app.get('/auth/google/callback', 
-//  passport.authenticate('google', { failureRedirect: '/error' }),
-//  function(req, res) {
-//    // Successful authentication, redirect success.
-//    res.redirect('/index.ejs');
-//  });
-
-//  app.get('/success', (req, res) => res.send(feed.ejs));
 
 //Use flash messages for errors, info, ect...
 app.use(flash());
@@ -83,63 +77,3 @@ app.listen(process.env.PORT || PORT, () => {
 });
 
 
-/*  EXPRESS */
-
-
-
-// app.use(session({
-//   resave: false,
-//   saveUninitialized: true,
-//   secret: 'SECRET' 
-// }));
-
-// app.get('/', function(req, res) {
-//   res.render('pages/auth');
-// });
-
-
-
-// index.js
-
-/*  PASSPORT SETUP  */
-
-
-
-// app.get('/success', (req, res) => res.send(userProfile));
-// app.get('/error', (req, res) => res.send("error logging in"));
-
-// passport.serializeUser(function(user, cb) {
-//   cb(null, user);
-// });
-
-// passport.deserializeUser(function(obj, cb) {
-//   cb(null, obj);
-// });
-
-/*  Google AUTH  */
- 
-// const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
-// const GOOGLE_CLIENT_ID = "49011582156-l0aar1csjtupd65s6rr35k26441fabqt.apps.googleusercontent.com" 
-// const GOOGLE_CLIENT_SECRET = "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"
-// passport.use(new GoogleStrategy({
-//     clientID: GOOGLE_CLIENT_ID,
-//     clientSecret: GOOGLE_CLIENT_SECRET,
-//     callbackURL: "http://localhost:3000/auth/google/callback"
-//   },
-//   function(accessToken, refreshToken, profile, done) {
-//       userProfile=profile;
-//       return done(null, userProfile);
-//   }
-// ));
- 
-// app.get('/auth/google', 
-//   passport.authenticate('google', { scope : ['profile', 'email'] }));
- 
-// app.get('/auth/google/callback', 
-//   passport.authenticate('google', { failureRedirect: '/error' }),
-//   function(req, res) {
-//     // Successful authentication, redirect success.
-//     res.redirect('/success');
-//   });
-
-//   app.get('/success', (req, res) => res.send(feed.ejs));
