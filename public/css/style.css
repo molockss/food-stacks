@@ -50,7 +50,7 @@ body {
     margin-top: 70px;
 }
 
-
+/* .up {margin-top: 100px;} */
 
 .home{
     border: 2px solid black;
@@ -119,6 +119,15 @@ select {
       min-width: 84vw;
     }
   
+    html,
+    body {
+        height: 100%;
+        font-size: 18px;
+        font-family: 'Roboto';
+        font-variant: inherit;
+    }
+
+    
     .hr {
       width: 35rem;
     }
@@ -127,11 +136,14 @@ select {
 
 }
 
+/* container-card styling */
 .hide { margin-top: -48px;}
-.hide-e { margin-top: 103px;}
+.hide-e { margin-top: 92px;}
 .hide-f {margin-top: -100px}
 .hide-g {margin-top: 35px}
 .hide-h { margin-top: -30px;}
+.hide-i { margin-top: -20px;}
+.hide-j {margin-top: 108px;}
 
 /* .reduce { margin-bottom: 20px;} */
 
@@ -156,20 +168,25 @@ flex-direction: column;
     margin-top: 5px;
   }
 
+  /* Paragraph Styling */
   .blockk {
   display: block;
   text-align: start;
+  font-size: 18px;
   /* margin: auto; */
-  width: 92%;
+  width: 108%;
+  margin-bottom: 40px;
+  line-height: 1.8;
   }
 
   .good-idea { 
 
     display: block;
+    font-weight: bolder;
   text-align: start;
   font-size: 26px;
   /* margin: auto; */
-  width: 100%;
+  width: 108%;
   }
 /* .bottom { margin: auto auto ;
 display: flex;
@@ -189,14 +206,7 @@ justify-content: start;} */
     }
 
     
-    html,
-    body {
-        height: 100%;
-        font-size: 18px;
-        font-family: 'Calibri';
-        font-variant: inherit;
-    }
-
+ 
     /* .card-img-top{
         width: 100%;
         max-width: 400px;
@@ -230,7 +240,9 @@ margin-right: 0
         color: gray;
     }
     
-    
+    .text-type {
+        font-family: "Roboto";
+    }
 
     }
         
@@ -243,3 +255,69 @@ margin-right: 0
     color: grey
 }
 
+/* Media Query for Laptop - large*/
+@media (min-width: 1024px) and (max-width: 1600px) {
+
+   
+
+.hide-e {margin-left: auto;}
+
+.to-right { padding-right: -0px;
+ float: right;
+
+
+
+}
+
+.up {margin-top: 100px;}
+
+.widen {
+
+    width: 90vw;
+    margin-inline-start: -20%;
+}
+
+.widen-left {
+   margin: auto;
+}
+
+
+
+
+
+
+}
+
+/* Media Query for Laptop - Small*/
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+
+    .hide-e {margin-left: auto;}
+    
+    .to-right { padding-right: -0px;
+     float: right;
+     margin-bottom: -80px;
+    
+    
+    
+    }
+    
+    .widen {
+    
+        width: 90vw;
+        margin-inline-start: 10px;
+    }
+
+    .good-idea { width: 130%;}
+    
+    .widen-left {
+       margin-top: 30px;
+    }
+    
+    
+    
+    
+    
+    
+    }

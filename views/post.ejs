@@ -1,5 +1,5 @@
 <%- include('partials/logged-in-header') -%>
-<div class="container card-container">
+<div class="container card-container hide-j">
   <!-- <div class="row justify-content-center mt-5">
     <div class="col-6">
       <h2><%= post.title %></h2>
@@ -100,7 +100,7 @@
             action="/post/bookmarkPost/<%= post.id %>?_method=PUT"
             method="POST"
           >
-          <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
+          <button class="<%if(post.bookmarks.includes(user._id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
             btn btn-secondary end" type="submit"></button>
           </form>
           <%if(post.user == user.id){ %>
