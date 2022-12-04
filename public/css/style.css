@@ -240,7 +240,9 @@ margin-right: 0
         color: gray;
     }
     
-    
+    .text-type {
+        font-family: "Roboto";
+    }
 
     }
         
