@@ -50,7 +50,7 @@ body {
     margin-top: 70px;
 }
 
-
+/* .up {margin-top: 100px;} */
 
 .home{
     border: 2px solid black;
@@ -255,3 +255,69 @@ margin-right: 0
     color: grey
 }
 
+/* Media Query for Laptop - large*/
+@media (min-width: 1024px) and (max-width: 1600px) {
+
+   
+
+.hide-e {margin-left: auto;}
+
+.to-right { padding-right: -0px;
+ float: right;
+
+
+
+}
+
+.up {margin-top: 100px;}
+
+.widen {
+
+    width: 90vw;
+    margin-inline-start: -20%;
+}
+
+.widen-left {
+   margin: auto;
+}
+
+
+
+
+
+
+}
+
+/* Media Query for Laptop - Small*/
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+
+
+    .hide-e {margin-left: auto;}
+    
+    .to-right { padding-right: -0px;
+     float: right;
+     margin-bottom: -80px;
+    
+    
+    
+    }
+    
+    .widen {
+    
+        width: 90vw;
+        margin-inline-start: 10px;
+    }
+
+    .good-idea { width: 130%;}
+    
+    .widen-left {
+       margin-top: 30px;
+    }
+    
+    
+    
+    
+    
+    
+    }

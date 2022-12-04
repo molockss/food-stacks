@@ -100,7 +100,7 @@
             action="/post/bookmarkPost/<%= post.id %>?_method=PUT"
             method="POST"
           >
-          <button class="<%if(post.bookmarks.includes(user.id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
+          <button class="<%if(post.bookmarks.includes(user._id)){ %> bi bi-bookmark-fill<%} else { %> bi bi-bookmark <% }%>
             btn btn-secondary end" type="submit"></button>
           </form>
           <%if(post.user == user.id){ %>
