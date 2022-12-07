@@ -23,13 +23,14 @@ module.exports = function (passport) {
     })
   }))
 
- 
+  const GOOGLE_CLIENT_ID = '49011582156-l0aar1csjtupd65s6rr35k26441fabqt.apps.googleusercontent.com'
+  const GOOGLE_CLIENT_SECRET ='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'
   
   passport.use(new GoogleStrategy({
 
   
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    clientID: GOOGLE_CLIENT_ID,
+    clientSecret: GOOGLE_CLIENT_SECRET,
     callbackURL: "http://foodstacks.up.railway.app/auth/google/callback",
     //"http://localhost:3000/auth/google/callback" ||
 },
