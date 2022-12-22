@@ -33,6 +33,7 @@ I used MVC to structure my code.
 ## Optimizations
 
 Future
+
 Embed exisiting social media posts in Foodstacks
 Customise the site so it's not specific to Dubai and incorporates all the other emirates
 Add Comments under each posts
