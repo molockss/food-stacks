@@ -12,6 +12,7 @@ password: test123
 
 <!-- ![image](https://user-images.githubusercontent.com/64442298/122502939-66be3c80-cfac-11eb-82cd-c5c07d2b3a5e.png) -->
 
+<img src="https://github.com/molockss/molockss/blob/main/foodstacks-complete.gif" alt="foodstacks" vh="350px" vw="0%" />
 
 ## How It's Made:
 
