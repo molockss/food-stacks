@@ -32,9 +32,18 @@ I used MVC to structure my code.
 
 ## Optimizations
 
+Future
+Embed exisiting social media posts in Foodstacks
+Customise the site so it's not specific to Dubai and incorporates all the other emirates
+Add Comments under each posts
 
 ## Lessons Learned:
- -->
+ I learned so much over the course of building this app:
+
+Figuring out where to put logic: Should it go in EJS? Controller? An entirely separate JS file? I played around with placing my logic in different places. And as I learned more about what worked best, I figured out where it is best placed.
+
+Styling made easy: I'd once spent hours coding modals and tooltips for another project. I was able to focus on back-end work with time saved using Bootstrap.
+.
 
 
 
